@@ -364,16 +364,6 @@ body {
   display: inline-block;
   vertical-align: top;
 }
-.combat input[type="number"] {
-  background: none;
-  width: 50px;
-  text-align: center;
-  border: 1 #2089c7 solid;
-}
-.combat input[type="number"]:focus {
-  outline: 0;
-  box-shadow: none;
-}
 .combat .left {
   margin: 5px;
   display: inline-block;
@@ -390,14 +380,28 @@ body {
   vertical-align: top;
 }
 .combat table {
-  padding: 5px;
+  padding: 2px;
   text-align: center;
+  border-collapse: separate;
+}
+.combat table caption {
+  border: 0;
+  border-left: 1px #2089c7 solid;
+  border-right: 1px #2089c7 solid;
+  background: #2089c7;
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 20px;
+  padding: 5px;
 }
 .combat table .limitedwidth {
-  width: 85px;
+  max-width: 70px;
 }
 .combat table .namingwidth {
-  width: 120px;
+  max-width: 145px;
 }
 .combat table td:first-child,
 .combat table th:first-child {
@@ -412,24 +416,48 @@ body {
   padding: 3px;
 }
 .combat table th {
-  border-left: 1px #2089c7 solid;
-  border-right: 1px #2089c7 solid;
   background: #2089c7;
   text-transform: uppercase;
   font-family: "Baron Neue";
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   color: #ffffff;
   height: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 .combat table td {
-  border-left: 1px #2089c7 solid;
-  border-right: 1px #2089c7 solid;
   font-family: "MyriadPro";
   text-transform: none;
   font-size: 11px;
+}
+.combat table td input {
+  border: 1px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.combat table input[type="number"] {
+  background: none;
+  text-align: center;
+}
+.combat table input[type="number"]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.combat table input[type="text"] {
+  background: none;
+  text-align: center;
+}
+.combat table input[type="text"]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.combat table .inputShort {
+  max-width: 65px;
+}
+.combat table .inputlong {
+  width: 140px;
 }
 .entropicPowers .left {
   margin: 5px;

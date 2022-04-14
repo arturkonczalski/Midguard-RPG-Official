@@ -153,6 +153,36 @@
           "description": ""
         }
       },
+      "combatRngOffOne": {
+        "name": "",
+        "skillSum": 0,
+        "attacks": "",
+        "shortDistance": "",
+        "midDistance": "",
+        "longDistance": "",
+        "extrDistance": "",
+        "damage": ""
+      },
+      "combatRngOffTwo": {
+        "name": "",
+        "skillSum": 0,
+        "attacks": "",
+        "shortDistance": "",
+        "midDistance": "",
+        "longDistance": "",
+        "extrDistance": "",
+        "damage": ""
+      },
+      "combatRngOffThree": {
+        "name": "",
+        "skillSum": 0,
+        "attacks": "",
+        "shortDistance": "",
+        "midDistance": "",
+        "longDistance": "",
+        "extrDistance": "",
+        "damage": ""
+      },
       "combatRngDefOne": {
         "basic": 0,
         "atuts": 0,
@@ -170,6 +200,30 @@
         "atuts": 0,
         "bonuses": 0,
         "armorShield": 0
+      },
+      "combatCloOffOne": {
+        "name": "",
+        "type": "",
+        "sumSkill": "",
+        "accuracy": "",
+        "hits": "",
+        "damage": ""
+      },
+      "combatCloOffTwo": {
+        "name": "",
+        "type": "",
+        "sumSkill": "",
+        "accuracy": "",
+        "hits": "",
+        "damage": ""
+      },
+      "combatCloOffThree": {
+        "name": "",
+        "type": "",
+        "sumSkill": "",
+        "accuracy": "",
+        "hits": "",
+        "damage": ""
       },
       "combatCloDefOne": {
         "basic": 0,
@@ -191,6 +245,51 @@
         "bonuses": 0,
         "weaponDef": 0,
         "armorShield": 0
+      },
+      "combatGrenadeOne": {
+        "name": "",
+        "explosionRadius": "",
+        "damage": ""
+      },
+      "combatGrenadeTwo": {
+        "name": "",
+        "explosionRadius": "",
+        "damage": ""
+      },
+      "combatGrenadeThree": {
+        "name": "",
+        "explosionRadius": "",
+        "damage": ""
+      },
+      "combatArmorsOne": {
+        "name": "",
+        "closeCombat": "",
+        "ballistic": ""
+      },
+      "combatArmorsTwo": {
+        "name": "",
+        "closeCombat": "",
+        "ballistic": ""
+      },
+      "combatArmorsThree": {
+        "name": "",
+        "closeCombat": "",
+        "ballistic": ""
+      },
+      "combatShieldOne": {
+        "name": "",
+        "closeDef": "",
+        "rangeDef": ""
+      },
+      "combatShieldTwo": {
+        "name": "",
+        "closeDef": "",
+        "rangeDef": ""
+      },
+      "combatShieldThree": {
+        "name": "",
+        "closeDef": "",
+        "rangeDef": ""
       }
     },
     "npc": {

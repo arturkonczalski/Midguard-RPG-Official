@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/Baron Neue.otf");
+}
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/Baron Neue Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/Baron Neue Italic.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Baron Neue";
+  src: url("fonts/Baron Neue Bold Italic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("fonts/MyriadPro-Regular.otf");
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("fonts/MyriadPro-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("fonts/MyriadPro-It.otf");
+  font-style: italic;
+}
+body {
+  font-family: "MyriadPro";
+  text-transform: none;
+  font-size: 16px;
+}
+.window-app .window-content {
+  padding: 8;
+  background: #ffffff;
+}
+.midguardrpg.sheet.player {
+  background: #0068b1;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player img {
+  width: 200px;
+  height: 250px;
+}
+.midguardrpg.sheet.player form {
+  background: #ffffff;
+  border: 4px #2089c7 solid;
+  -webkit-border-radius: 0px 10px;
+  -moz-border-radius: 0px 10px;
+  border-radius: 0px 10px;
+  margin: 0;
+  padding: 8px;
+}
+.midguardrpg.sheet.player form .charName {
+  height: 40px;
+  text-align: center;
+  background: none;
+  border: 0;
+}
+.midguardrpg.sheet.player form h1 {
+  border: 0;
+}
+.midguardrpg.sheet.player .details {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0px auto;
+}
+.midguardrpg.sheet.player .details input {
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  border: 0;
+  background: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details .row {
+  margin-top: 5px;
+}
+.midguardrpg.sheet.player .details .rowfirst {
+  width: 256px;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player .details .rowfirst input[type="text"] {
+  width: 254px;
+  margin: 1;
+}
+.midguardrpg.sheet.player .details .rowsecond {
+  width: 256px;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player .details .rowsecond input[type="text"] {
+  width: 254px;
+  margin: 1;
+}
+.midguardrpg.sheet.player .details .rowthirda {
+  width: 256px;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player .details .rowthirda input {
+  width: 254px;
+  margin: 1;
+}
+.midguardrpg.sheet.player .details .rowthirdb {
+  width: 128px;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player .details .rowthirdb input {
+  width: 126px;
+  margin: 1;
+}
+.midguardrpg.sheet.player .details .rowforth {
+  width: 128px;
+  padding: 0;
+  margin: 0;
+}
+.midguardrpg.sheet.player .details .rowforth .healthmax {
+  height: fit-content;
+  padding: 0;
+  margin: 1;
+  width: 56px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  border: 0;
+  background: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details .rowforth input[type="number"] {
+  height: fit-content;
+  padding: 0;
+  margin: 1;
+  width: 56px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  border: 0;
+  background: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details .rowforth .slash {
+  color: #2089c7;
+  font-weight: bold;
+  vertical-align: middle;
+  margin: 1;
+  padding: 0;
+  width: 4px;
+}
+.midguardrpg.sheet.player .details .rowfifth {
+  width: 128px;
+  padding-top: 20px;
+  margin: 0;
+  height: 43px;
+}
+.midguardrpg.sheet.player .details .rowfifth input {
+  height: fit-content;
+  width: 126px;
+  padding: 0;
+  margin: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  border: 0;
+  background: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details .rowfifth input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 2px #2089c7 solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.midguardrpg.sheet.player .details .labeldetails {
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 16px;
+  color: #2089c7;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.navigation {
+  background: #2089c7;
+}
+.navigation .labelnav {
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0;
+}
+.navcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  align-content: start;
+}
+.navcontainer .item {
+  flex: 0 0 auto;
+  margin: 4px;
+}
+.content .labelcontent {
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 14px;
+  color: #2089c7;
+}
+.content .editor {
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+  border: 1px #2089c7 solid;
+  -webkit-border-radius: 0px 10px;
+  -moz-border-radius: 0px 10px;
+  border-radius: 0px 10px;
+}
+.contcontainer {
+  justify-content: center;
+  text-align: center;
+  align-items: auto;
+  align-content: start;
+}
+.contcontainer .item {
+  margin: 4px;
+}
+.contcontainer:after {
+  display: block;
+  margin: 12px;
+  flex: 999 999 auto;
+}
+.parameters .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.parameters .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.parameters .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.parameters table {
+  padding: 5px;
+  border: 2px #2089c7 solid;
+}
+.parameters table th {
+  background: #2089c7;
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px #2089c7 solid;
+}
+.parameters table th input[type="number"] {
+  background: #ffffff;
+  text-align: center;
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+.parameters table th input[type="number"]:focus {
+  background: #ffffff;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.parameters table td {
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+.parameters table td input[type="number"] {
+  text-align: center;
+  border: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+}
+.parameters table td input[type="number"]:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.parameters table td:first-child {
+  width: 150px;
+}
+.parameters table .lastchild {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+}
+.atutsImplants .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.atutsImplants .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.atutsImplants .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.combat input[type="number"] {
+  background: none;
+  width: 50px;
+  text-align: center;
+  border: 1 #2089c7 solid;
+}
+.combat input[type="number"]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.combat .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.combat .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.combat .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.combat table {
+  padding: 5px;
+  text-align: center;
+}
+.combat table .limitedwidth {
+  width: 85px;
+}
+.combat table .namingwidth {
+  width: 120px;
+}
+.combat table td:first-child,
+.combat table th:first-child {
+  border-left: none;
+}
+.combat table td:last-child,
+.combat table th:last-child {
+  border-right: none;
+}
+.combat table th,
+.combat table td {
+  padding: 3px;
+}
+.combat table th {
+  border-left: 1px #2089c7 solid;
+  border-right: 1px #2089c7 solid;
+  background: #2089c7;
+  text-transform: uppercase;
+  font-family: "Baron Neue";
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.combat table td {
+  border-left: 1px #2089c7 solid;
+  border-right: 1px #2089c7 solid;
+  font-family: "MyriadPro";
+  text-transform: none;
+  font-size: 11px;
+}
+.entropicPowers .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.entropicPowers .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.entropicPowers .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.equipment .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 97%;
+}
+.equipment .left .editor {
+  text-align: left;
+}
+.equipment .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.equipment .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.notes .left {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+.notes .left .editor {
+  text-align: left;
+}
+.notes .center {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.notes .right {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+.notes .right .editor {
+  text-align: left;
+}
+.columnAlternative {
+  display: inline-block;
+  vertical-align: top;
+}
+.midguardrpg.sheet.item form {
+  display: flex;
+  flex-direction: column;
+}
+.midguardrpg.sheet.item .sheet-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.midguardrpg.sheet.item .editor {
+  height: 100%;
+}

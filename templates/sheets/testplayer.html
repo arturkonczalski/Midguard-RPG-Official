@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: auto;
+        align-content: start;
+      }
+      .container:after {
+        display: block;
+        margin: 12px;
+        flex: 999 999 auto;
+      }
+      .item {
+        flex: 0 0 auto;
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div>
+          <h1>
+            <input
+              name="name"
+              type="text"
+              value="{{actor.name}}"
+              placeholder="Name"
+              class="charName"
+            />
+          </h1>
+        </div>
+      </div>
+      <header class="container">
+        <div class="item">zdjęcie</div>
+        <div class="item">
+          <div class="container">
+            <div class="item">Rasa</div>
+            <div class="item">Klasa</div>
+          </div>
+          <div class="container">
+            <div class="item">Ranga</div>
+            <div class="item">język</div>
+          </div>
+          <div class="container">
+            <div class="item">Motywacja</div>
+            <div class="item">Płeć</div>
+            <div class="item">Wiek</div>
+          </div>
+          <div class="container">
+            <div class="item">Szczęście</div>
+            <div class="item">Przesunięcia</div>
+            <div class="item">Łaska Norn</div>
+            <div class="item">Witalność</div>
+          </div>
+        </div>
+      </header>
+      <nav class="container">
+        <div class="item">Parametry</div>
+        <div class="item">Atuty, wszczepy i zalety</div>
+        <div class="item">Walka</div>
+        <div class="item">Moce Entropiczne</div>
+        <div class="item">Wyposażenie, notatki i historia</div>
+      </nav>
+      <section class="container">
+        <div class="item">zawartość</div>
+      </section>
+    </div>
+  </body>
+</html>

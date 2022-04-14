@@ -1,0 +1,6 @@
+{
+  "less.compile": {
+    "main": "midguardrpg.less",
+    "out": "../"
+  }
+}

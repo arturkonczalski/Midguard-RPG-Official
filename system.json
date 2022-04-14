@@ -1,0 +1,20 @@
+{
+  "name": "midguardrpg",
+  "title": "Midguard RPG",
+  "description": "System for playing Polish RPG, Midguard",
+  "author": "System: Midguard team. FoundryVTT: arturkonczalski",
+  "version": 0.01,
+  "minimumCoreVersion": "9.0",
+  "compatibleCoreVersion": "9.0",
+  "esmodules": ["midguardrpg.js"],
+  "styles": ["midguardrpg.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    }
+  ],
+  "initiative": "1d20 + @zrecznosc + @refleks"
+}

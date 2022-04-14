@@ -1,0 +1,240 @@
+{
+  "Actor": {
+    "types": ["player", "npc"],
+    "templates": {
+      "common": {
+        "notes": "",
+        "history": "",
+        "parameters": [],
+        "mainParameters": {
+          "bodyBuild": 0,
+          "dexterity": 0,
+          "perception": 0,
+          "intelligence": 0,
+          "cool": 0,
+          "entropy": 0
+        },
+        "secondaryParameters": {
+          "vitality": {
+            "value": 0,
+            "max": 0
+          },
+          "power": {
+            "value": 0,
+            "max": 0
+          },
+          "concentration": {
+            "value": 0,
+            "max": 0
+          },
+          "athletic": {
+            "value": 0
+          },
+          "appearance": {
+            "value": 0
+          },
+          "neurostability": {
+            "value": 0,
+            "max": 0
+          }
+        },
+        "skills": {
+          "meleeWeapon": {
+            "self": 0,
+            "total": 0
+          },
+          "meleeCombat": {
+            "self": 0,
+            "total": 0
+          },
+          "endurance": {
+            "self": 0,
+            "total": 0
+          },
+          "shortWeapon": {
+            "self": 0,
+            "total": 0
+          },
+          "driving": {
+            "self": 0,
+            "total": 0
+          },
+          "reflex": {
+            "self": 0,
+            "total": 0
+          },
+          "longWeapon": {
+            "self": 0,
+            "total": 0
+          },
+          "pilotage": {
+            "self": 0,
+            "total": 0
+          },
+          "acuteSenses": {
+            "self": 0,
+            "total": 0
+          },
+          "connections": {
+            "self": 0,
+            "total": 0
+          },
+          "technology": {
+            "self": 0,
+            "total": 0
+          },
+          "knowledge": {
+            "self": 0,
+            "total": 0
+          },
+          "hacking": {
+            "self": 0,
+            "total": 0
+          },
+          "infiltration": {
+            "self": 0,
+            "total": 0
+          },
+          "tricks": {
+            "self": 0,
+            "total": 0
+          },
+          "charm": {
+            "self": 0,
+            "total": 0
+          },
+          "hekseri": {
+            "self": 0,
+            "total": 0
+          },
+          "willpower": {
+            "self": 0,
+            "total": 0
+          }
+        }
+      }
+    },
+    "player": {
+      "templates": ["common"],
+      "exp": {
+        "total": 0,
+        "spent": 0
+      },
+      "moves": {
+        "value": 0,
+        "max": 0
+      },
+      "nornBless": {
+        "value": 0,
+        "max": 0
+      },
+      "luck": {
+        "value": 0,
+        "max:": 0
+      },
+      "energyProtection": {
+        "value": 0,
+        "max": 0
+      },
+      "class": "",
+      "race": "",
+      "rank": "",
+      "mysticlanguage": "",
+      "motivation": "",
+      "gender": "",
+      "age": "",
+      "traits": {
+        "first": {
+          "name": "",
+          "description": ""
+        },
+        "second": {
+          "name": "",
+          "description": ""
+        }
+      },
+      "combatRngDefOne": {
+        "basic": 0,
+        "atuts": 0,
+        "bonuses": 0,
+        "armorShield": 0
+      },
+      "combatRngDefTwo": {
+        "basic": 0,
+        "atuts": 0,
+        "bonuses": 0,
+        "armorShield": 0
+      },
+      "combatRngDefThree": {
+        "basic": 0,
+        "atuts": 0,
+        "bonuses": 0,
+        "armorShield": 0
+      },
+      "combatCloDefOne": {
+        "basic": 0,
+        "MWorMC": 0,
+        "bonuses": 0,
+        "weaponDef": 0,
+        "armorShield": 0
+      },
+      "combatCloDefTwo": {
+        "basic": 0,
+        "MWorMC": 0,
+        "bonuses": 0,
+        "weaponDef": 0,
+        "armorShield": 0
+      },
+      "combatCloDefThree": {
+        "basic": 0,
+        "MWorMC": 0,
+        "bonuses": 0,
+        "weaponDef": 0,
+        "armorShield": 0
+      }
+    },
+    "npc": {
+      "templates": ["common"]
+    }
+  },
+  "Item": {
+    "types": [
+      "meleeWeapon",
+      "shortWeapon",
+      "longWeapon",
+      "throwWeapon",
+      "armor",
+      "shield",
+      "energyShield",
+      "items",
+      "vehicle"
+    ],
+    "templates": {
+      "itemDescription": {
+        "description": "Description"
+      }
+    },
+    "meleeWeapon": {
+      "templates": ["itemDescription"],
+      "type": "L",
+      "damage": 0,
+      "accuracy": 0,
+      "defense": 0,
+      "specialRules": ""
+    },
+    "shortWeapon": {
+      "templates": ["itemDescription"],
+      "damage": 0,
+      "accuracy": 0,
+      "attacks": 0,
+      "specialRules": ""
+    },
+    "longWeapon": {
+      "templates": ["itemDescription"],
+      "damage": 0,
+      "accuracy": 0,
+      "attacks": 0,
+      "specialRules": ""
+    }
+  }
+}

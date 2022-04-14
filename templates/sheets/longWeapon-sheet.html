@@ -1,0 +1,58 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img
+      src="{{item.img}}"
+      data-edit="img"
+      title="{{item.name}}"
+      height="64"
+      width="64"
+    />
+    <h1>
+      <input
+        name="name"
+        type="text"
+        value="{{item.name}}"
+        placeholder="{{ localize 'MIDGUARD.name' }}"
+      />
+    </h1>
+  </header>
+  <div class="sheet-content">
+    <table>
+      <tr>
+        <th>{{localize "MIDGUARD.CombatDamage"}}</th>
+        <th>{{localize "MIDGUARD.CombatAccuracy"}}</th>
+        <th>{{localize "MIDGUARD.CombatAttacks"}}</th>
+        <th>{{localize "MIDGUARD.CombatSpecialRules"}}</th>
+      </tr>
+      <tr>
+        <td>
+          <input name="data.damage" type="text" value="{{data.data.damage}}" />
+        </td>
+        <td>
+          <input
+            name="data.accuracy"
+            type="text"
+            value="{{data.data.accuracy}}"
+          />
+        </td>
+        <td>
+          <input
+            name="data.attacks"
+            type="text"
+            value="{{data.data.attacks}}"
+          />
+        </td>
+        <td>
+          <input
+            name="data.specialRules"
+            type="text"
+            value="{{data.data.specialRules}}"
+          />
+        </td>
+      </tr>
+    </table>
+    <p>{{localize "MIDGUARD.description"}}</p>
+    {{editor content=data.data.description target="data.description" button=true
+    owner=owner editable=editable}}
+  </div>
+</form>

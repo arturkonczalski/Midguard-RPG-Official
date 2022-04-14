@@ -1,0 +1,1016 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <div>
+    <!-- character name starts -->
+
+    <div>
+      <h1>
+        <input
+          name="name"
+          type="text"
+          value="{{actor.name}}"
+          placeholder="Name"
+          class="charName"
+        />
+      </h1>
+    </div>
+
+    <!-- character name ends -->
+    <!-- header starts -->
+    <header class="centry">
+      <div class="details">
+        <div class="columnAlternative">
+          <img
+            class="profile-img"
+            src="{{actor.img}}"
+            data-edit="img"
+            title="{{actor.name}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <div class="row">
+            <div class="columnAlternative rowfirst">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterRace"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.race"
+                  type="text"
+                  value="{{data.data.race}}"
+                />
+              </div>
+            </div>
+            <div class="columnAlternative rowfirst">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterClass"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.class"
+                  type="text"
+                  value="{{data.data.class}}"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columnAlternative rowsecond">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterRank"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.rank"
+                  type="text"
+                  value="{{data.data.rank}}"
+                />
+              </div>
+            </div>
+            <div class="columnAlternative rowsecond">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterMysticLanguage"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.mysticlanguage"
+                  type="text"
+                  value="{{data.data.mysticlanguage}}"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columnAlternative rowthirda">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterMotivation"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.motivation"
+                  type="text"
+                  value="{{data.data.motivation}}"
+                />
+              </div>
+            </div>
+            <div class="columnAlternative rowthirdb">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterGender"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.gender"
+                  type="text"
+                  value="{{data.data.gender}}"
+                />
+              </div>
+            </div>
+            <div class="columnAlternative rowthirdb">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterAge"
+                  }}</label>
+              </div>
+              <div>
+                <input
+                  name="data.age"
+                  type="number"
+                  value="{{data.data.age}}"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columnAlternative rowforth">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterLuck"
+                  }}</label>
+              </div>
+              <div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.luck.value"
+                    value="{{data.data.luck.value}}"
+                    data-dtype="Number"
+                  />
+                </div>
+                <div class="columnAlternative slash"> / </div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.luck.max"
+                    value="{{data.data.luck.max}}"
+                    data-dtype="Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="columnAlternative rowforth">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterMoves"
+                  }}</label>
+              </div>
+              <div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.moves.value"
+                    value="{{data.data.moves.value}}"
+                    data-dtype="Number"
+                  />
+                </div>
+                <div class="columnAlternative slash"> / </div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.moves.max"
+                    value="{{data.data.moves.max}}"
+                    data-dtype="Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="columnAlternative rowforth">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.CharacterNornBless"
+                  }}</label>
+              </div>
+              <div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.nornBless.value"
+                    value="{{data.data.nornBless.value}}"
+                    data-dtype="Number"
+                  />
+                </div>
+                <div class="columnAlternative slash"> / </div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.nornBless.max"
+                    value="{{data.data.nornBless.max}}"
+                    data-dtype="Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="columnAlternative rowforth">
+              <div>
+                <label class="resource-label labeldetails">{{localize
+                    "MIDGUARD.SecondaryParametersVitality"
+                  }}</label>
+              </div>
+              <div>
+                <div class="columnAlternative">
+                  <input
+                    type="number"
+                    name="data.vitality.value"
+                    value="{{data.data.vitality.value}}"
+                    data-dtype="Number"
+                  />
+                </div>
+                <div class="columnAlternative slash"> / </div>
+                <div class="columnAlternative healthmax">
+                  {{timesFivePlusTen data.data.bodyBuild placeholder="0"}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columnAlternative rowfifth">
+              <label class="resource-label labeldetails">{{localize
+                  "MIDGUARD.CharacterExpTotal"
+                }}</label>
+            </div>
+            <div class="columnAlternative rowfifth">
+              <input
+                type="number"
+                name="data.exp.total"
+                value="{{data.data.exp.total}}"
+                data-dtype="Number"
+              />
+            </div>
+            <div class="columnAlternative rowfifth">
+              <label class="resource-label labeldetails">{{localize
+                  "MIDGUARD.CharacterExpSpent"
+                }}</label>
+            </div>
+            <div class="columnAlternative rowfifth">
+              <input
+                type="number"
+                name="data.exp.spent"
+                value="{{data.data.exp.spent}}"
+                data-dtype="Number"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header ends -->
+    <!-- navigation starts -->
+
+    <nav class="navcontainer sheet-tabs tabs navigation" data-group="primary">
+      <div class="item">
+        <a class="item labelnav" data-tab="parameters">{{localize
+            "MIDGUARD.parameters"
+          }}</a>
+      </div>
+      <div class="item">
+        <a class="item labelnav" data-tab="atutsImplants">{{localize
+            "MIDGUARD.Atuts"
+          }},
+          {{localize "MIDGUARD.Implants"}},
+          {{localize "MIDGUARD.Traits"}}</a>
+      </div>
+      <div class="item">
+        <a class="item labelnav" data-tab="combat">{{localize
+            "MIDGUARD.combat"
+          }}</a>
+      </div>
+      <div class="item">
+        <a class="item labelnav" data-tab="entropicPowers">{{localize
+            "MIDGUARD.entropicPowers"
+          }}</a>
+      </div>
+      <div class="item">
+        <a class="item labelnav" data-tab="equipment">{{localize
+            "MIDGUARD.equipment"
+          }}</a>
+      </div>
+      <div class="item">
+        <a class="item labelnav" data-tab="notes">{{localize
+            "MIDGUARD.notes"
+          }}</a>
+      </div>
+    </nav>
+
+    <!-- navigation ends -->
+    <!-- content starts -->
+
+    <section class="contcontainer sheet-body content">
+      <div class="item">
+        <!-- Parameters start -->
+
+        <div class="tab parameters" data-group="primary" data-tab="parameters">
+          <div class="left">
+            <table>
+              <tr>
+                <th colspan="3">{{localize
+                    "MIDGUARD.MainParametersBodyBuild"
+                  }}</th>
+                <th class="lastchild"><input
+                    name="data.bodyBuild"
+                    type="number"
+                    value="{{data.data.bodyBuild}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsMeleeWeapon"}}</td>
+                <td><input
+                    name="data.meleeWeapon.self"
+                    type="number"
+                    value="{{data.data.meleeWeapon.self}}"
+                  /></td>
+                <td>{{sum
+                    data.data.bodyBuild
+                    data.data.meleeWeapon.self
+                    content=data.data.meleeWeapon.total
+                    target="data.meleeWeapon.total"
+                  }}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsMeleeCombat"}}</td>
+                <td><input
+                    name="data.meleeCombat.self"
+                    type="number"
+                    value="{{data.data.meleeCombat.self}}"
+                  /></td>
+                <td>{{sum data.data.bodyBuild data.data.meleeCombat.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsEndurance"}}</td>
+                <td><input
+                    name="data.endurance.self"
+                    type="number"
+                    value="{{data.data.endurance.self}}"
+                  /></td>
+                <td>{{sum data.data.bodyBuild data.data.endurance.self}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th colspan="3">{{localize
+                    "MIDGUARD.MainParametersDexterity"
+                  }}</th>
+                <th class="lastchild"><input
+                    name="data.dexterity"
+                    type="number"
+                    value="{{data.data.dexterity}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsShortWeapon"}}</td>
+                <td><input
+                    name="data.shortWeapon.self"
+                    type="number"
+                    value="{{data.data.shortWeapon.self}}"
+                  /></td>
+                <td>{{sum data.data.dexterity data.data.shortWeapon.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsDriving"}}</td>
+                <td><input
+                    name="data.driving.self"
+                    type="number"
+                    value="{{data.data.driving.self}}"
+                  /></td>
+                <td>{{sum data.data.dexterity data.data.driving.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsReflex"}}</td>
+                <td><input
+                    name="data.reflex.self"
+                    type="number"
+                    value="{{data.data.reflex.self}}"
+                  /></td>
+                <td>{{sum data.data.dexterity data.data.reflex.self}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th colspan="3">{{localize
+                    "MIDGUARD.MainParametersPerception"
+                  }}</th>
+                <th class="lastchild"><input
+                    name="data.perception"
+                    type="number"
+                    value="{{data.data.perception}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsLongWeapon"}}</td>
+                <td><input
+                    name="data.longWeapon.self"
+                    type="number"
+                    value="{{data.data.longWeapon.self}}"
+                  /></td>
+                <td>{{sum data.data.perception data.data.longWeapon.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsPilotage"}}</td>
+                <td><input
+                    name="data.pilotage.self"
+                    type="number"
+                    value="{{data.data.pilotage.self}}"
+                  /></td>
+                <td>{{sum data.data.perception data.data.pilotage.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsAcuteSenses"}}</td>
+                <td><input
+                    name="data.acuteSenses.self"
+                    type="number"
+                    value="{{data.data.acuteSenses.self}}"
+                  /></td>
+                <td>{{sum data.data.perception data.data.acuteSenses.self}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="center">
+            <table>
+              <tr>
+                <th colspan="3">{{localize
+                    "MIDGUARD.MainParametersIntelligence"
+                  }}</th>
+                <th class="lastchild"><input
+                    name="data.intelligence"
+                    type="number"
+                    value="{{data.data.intelligence}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsConnections"}}</td>
+                <td><input
+                    name="data.connections.self"
+                    type="number"
+                    value="{{data.data.connections.self}}"
+                  /></td>
+                <td>{{sum
+                    data.data.intelligence
+                    data.data.connections.self
+                  }}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsTechnology"}}</td>
+                <td><input
+                    name="data.technology.self"
+                    type="number"
+                    value="{{data.data.technology.self}}"
+                  /></td>
+                <td>{{sum
+                    data.data.intelligence
+                    data.data.technology.self
+                  }}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsKnowledge"}}</td>
+                <td><input
+                    name="data.knowledge.self"
+                    type="number"
+                    value="{{data.data.knowledge.self}}"
+                  /></td>
+                <td>{{sum data.data.intelligence data.data.knowledge.self}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th colspan="3">{{localize "MIDGUARD.MainParametersCool"}}</th>
+                <th class="lastchild"><input
+                    name="data.cool"
+                    type="number"
+                    value="{{data.data.cool}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsHacking"}}</td>
+                <td><input
+                    name="data.hacking.self"
+                    type="number"
+                    value="{{data.data.hacking.self}}"
+                  /></td>
+                <td>{{sum data.data.cool data.data.hacking.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsInfiltration"}}</td>
+                <td><input
+                    name="data.infiltration.self"
+                    type="number"
+                    value="{{data.data.infiltration.self}}"
+                  /></td>
+                <td>{{sum data.data.cool data.data.infiltration.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsTricks"}}</td>
+                <td><input
+                    name="data.tricks.self"
+                    type="number"
+                    value="{{data.data.tricks.self}}"
+                  /></td>
+                <td>{{sum data.data.cool data.data.tricks.self}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th colspan="3">{{localize
+                    "MIDGUARD.MainParametersEntropy"
+                  }}</th>
+                <th class="lastchild"><input
+                    name="data.entropy"
+                    type="number"
+                    value="{{data.data.entropy}}"
+                  /></th>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>{{localize "MIDGUARD.Value"}}</td>
+                <td>{{localize "MIDGUARD.Sum"}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsCharm"}}</td>
+                <td><input
+                    name="data.charm.self"
+                    type="number"
+                    value="{{data.data.charm.self}}"
+                  /></td>
+                <td>{{sum data.data.entropy data.data.charm.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsHekseri"}}</td>
+                <td><input
+                    name="data.hekseri.self"
+                    type="number"
+                    value="{{data.data.hekseri.self}}"
+                  /></td>
+                <td>{{sum data.data.entropy data.data.hekseri.self}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">{{localize "MIDGUARD.SkillsWillpower"}}</td>
+                <td><input
+                    name="data.willpower.self"
+                    type="number"
+                    value="{{data.data.willpower.self}}"
+                  /></td>
+                <td>{{sum data.data.entropy data.data.willpower.self}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="right">
+            <table>
+              <tr>
+                <th></th>
+                <th>Max</th>
+                <th class="exception">Obecnie</th>
+              </tr>
+              <tr>
+                <th>{{localize "MIDGUARD.SecondaryParametersPower"}}</th>
+                <td>{{timesFive data.data.intelligence}}</td>
+                <td><input
+                    name="data.power.value"
+                    type="number"
+                    value="{{data.data.power.value}}"
+                  /></td>
+              </tr>
+              <tr>
+                <th>{{localize
+                    "MIDGUARD.SecondaryParametersConcentration"
+                  }}</th>
+                <td>{{sum data.data.cool data.data.entropy}}</td>
+                <td><input
+                    name="data.concentration.value"
+                    type="number"
+                    value="{{data.data.concentration.value}}"
+                  /></td>
+              </tr>
+              <tr>
+                <th>{{localize
+                    "MIDGUARD.SecondaryParametersNeurostability"
+                  }}</th>
+                <td>{{timesFive data.data.intelligence}}</td>
+                <td><input
+                    name="data.neurostability.value"
+                    type="number"
+                    value="{{data.data.neurostability.value}}"
+                  /></td>
+              </tr>
+              <tr>
+                <th>{{localize "MIDGUARD.SecondaryParametersAthletic"}}</th>
+                <td>{{sum data.data.bodyBuild data.data.dexterity}}</td>
+                <td><input
+                    name="data.athletic.value"
+                    type="number"
+                    value="{{data.data.athletic.value}}"
+                  /></td>
+              </tr>
+              <tr>
+                <th>{{localize "MIDGUARD.SecondaryParametersAppearance"}}</th>
+                <td>{{sum data.data.bodyBuild data.data.entropy}}</td>
+                <td><input
+                    name="data.appearance.value"
+                    type="number"
+                    value="{{data.data.appearance.value}}"
+                  /></td>
+              </tr>
+            </table>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <!-- Parameters end -->
+        <!-- Atuts, Implants and Traits start -->
+        <div
+          class="tab atutsImplants"
+          data-group="primary"
+          data-tab="atutsImplants"
+        >
+          <div class="flex-container">
+            <div class="flex-item">Atuty dsa ds as ds ad asd asd sa d</div>
+            <div class="flex-item">Wszczepy dsa ds ad s asda sd asd asd a</div>
+            <div class="flex-item">Zalety asd asds asd asda sd as</div>
+          </div>
+        </div>
+        <!-- Atuts, Implants and Traits end -->
+        <!-- Combat start -->
+        <div class="tab combat" data-group="primary" data-tab="combat">
+          <div class="left">
+            <table>
+              <tr>
+                <th class="namingwidth">{{localize
+                    "MIDGUARD.CombatWeaponName"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatSkillsSum"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatAttacks"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatRangeClose"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatRangeMedium"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatRangeFar"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatRangeExtr"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatDamage"
+                  }}</th>
+              </tr>
+              <tr>
+                <td>Testowana nazwa 1</td>
+                <td>{{data.data.meleeWeapon.total}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowana nazwa 2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowana nazwa 3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBasic"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.MainParametersDexterity"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.MainParametersCool"
+                  }}</th>
+                <th class="limitedwidth">{{localize "MIDGUARD.Atuts"}}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBonuses"
+                  }}</th>
+                <th class="limitedwidth">
+                  {{localize "MIDGUARD.CombatArmor"}}
+                  /
+                  {{localize "MIDGUARD.CombatShield"}}
+                </th>
+                <th class="limitedwidth">{{localize "MIDGUARD.CombatSum"}}</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.dexterity}}</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.dexterity}}</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.dexterity}}</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th class="namingwidth">{{localize
+                    "MIDGUARD.CombatWeaponName"
+                  }}</th>
+                <th class="limitedwidth">{{localize "MIDGUARD.CombatType"}}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatSkillsSumMWorMC"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatAccuracy"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatHitpoints"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatDamage"
+                  }}</th>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBasic"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.MainParametersCool"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatMWorMCvalue"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBonuses"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatWeaponDefense"
+                  }}</th>
+                <th class="limitedwidth">
+                  {{localize "MIDGUARD.CombatArmor"}}
+                  /
+                  {{localize "MIDGUARD.CombatShield"}}
+                </th>
+                <th class="limitedwidth">{{localize "MIDGUARD.CombatSum"}}</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>{{data.data.cool}}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </div>
+          <div class="right">
+            <table>
+              <tr>
+                <th>{{localize "MIDGUARD.CombatName"}}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatExplosionRadius"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatDamage"
+                  }}</th>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 2</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 3</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>{{localize "MIDGUARD.CombatName"}}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatCloseCombat"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBalistic"
+                  }}</th>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 2</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 3</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>{{localize "MIDGUARD.CombatName"}}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatCloseCombatDefense"
+                  }}</th>
+                <th class="limitedwidth">{{localize
+                    "MIDGUARD.CombatBalisticDefense"
+                  }}</th>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 2</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Testowa nazwa 3</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <!-- Combat end -->
+        <!-- Entropic Powers start -->
+        <div
+          class="tab entropicPowers"
+          data-group="primary"
+          data-tab="entropicPowers"
+        >
+          <div>Test Entropiczne</div>
+        </div>
+        <!-- Entropic Powers end -->
+        <!-- Equipment start -->
+        <div class="tab equipment" data-group="primary" data-tab="equipment">
+          <div class="left">
+            <label class="labelcontent">
+              {{localize "MIDGUARD.equipment"}}
+            </label>
+            {{editor
+              content=data.data.equipment
+              target="data.equipment"
+              button=true
+              owner=owner
+              editable=editable
+            }}
+          </div>
+          <div style="clear:both"></div>
+        </div>
+        <!-- Equipment end -->
+        <!-- Notes start -->
+        <div class="tab notes" data-group="primary" data-tab="notes">
+          <div class="left">
+            <label class="labelcontent">
+              {{localize "MIDGUARD.notes"}}
+            </label>
+            {{editor
+              content=data.data.notes
+              target="data.notes"
+              button=true
+              owner=owner
+              editable=editable
+            }}
+          </div>
+          <div class="right">
+            <label class="labelcontent">
+              {{localize "MIDGUARD.history"}}
+            </label>
+            {{editor
+              content=data.data.history
+              target="data.history"
+              button=true
+              owner=owner
+              editable=editable
+            }}
+          </div>
+          <div style="clear:both"></div>
+        </div>
+        <!-- Notes end -->
+      </div>
+    </section>
+
+    <!-- content ends -->
+  </div>
+</form>

@@ -1,0 +1,471 @@
+.midguardrpg.sheet.player {
+  background: #0068b1;
+  color: white;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 200px;
+    height: 250px;
+  }
+  form {
+    background: @sheet-background;
+    border: 4px @main-color solid;
+    -webkit-border-radius: 0px 10px;
+    -moz-border-radius: 0px 10px;
+    border-radius: 0px 10px;
+    margin: 0;
+    padding: 8px;
+    .charName {
+      height: 40px;
+      text-align: center;
+      background: none;
+      border: 0;
+    }
+    h1 {
+      border: 0;
+    }
+  }
+
+  // Details row
+  .details {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0px auto;
+    input {
+      height: fit-content;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      text-align: center;
+      border: 0;
+      background: none;
+      border-bottom: 2px @main-color solid;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+    }
+    input:focus {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      border-bottom: 2px @main-color solid;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+    }
+    .row {
+      margin-top: 5px;
+    }
+    .rowfirst {
+      width: 256px;
+      padding: 0;
+      margin: 0;
+      input[type="text"] {
+        width: 254px;
+        margin: 1;
+      }
+    }
+    .rowsecond {
+      width: 256px;
+      padding: 0;
+      margin: 0;
+      input[type="text"] {
+        width: 254px;
+        margin: 1;
+      }
+    }
+    .rowthirda {
+      width: 256px;
+      padding: 0;
+      margin: 0;
+      input {
+        width: 254px;
+        margin: 1;
+      }
+    }
+    .rowthirdb {
+      width: 128px;
+      padding: 0;
+      margin: 0;
+      input {
+        width: 126px;
+        margin: 1;
+      }
+    }
+    .rowforth {
+      width: 128px;
+      padding: 0;
+      margin: 0;
+      .healthmax {
+        height: fit-content;
+        padding: 0;
+        margin: 1;
+        width: 56px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        text-align: center;
+        border: 0;
+        background: none;
+        border-bottom: 2px @main-color solid;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+      }
+      input[type="number"] {
+        height: fit-content;
+        padding: 0;
+        margin: 1;
+        width: 56px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        text-align: center;
+        border: 0;
+        background: none;
+        border-bottom: 2px @main-color solid;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+      }
+      .slash {
+        color: @main-color;
+        font-weight: bold;
+        vertical-align: middle;
+        margin: 1;
+        padding: 0;
+        width: 4px;
+      }
+    }
+    .rowfifth {
+      width: 128px;
+      padding-top: 20px;
+      margin: 0;
+      height: 43px;
+      input {
+        height: fit-content;
+        width: 126px;
+        padding: 0;
+        margin: 1px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        text-align: center;
+        border: 0;
+        background: none;
+        border-bottom: 2px @main-color solid;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+      }
+    }
+    .rowfifth {
+      input:focus {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        border-bottom: 2px @main-color solid;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+      }
+    }
+    .labeldetails {
+      .BaronNeue();
+      font-size: 16px;
+      color: @main-color;
+      padding-left: 10px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// End of details row
+
+// Navigation row
+.navigation {
+  background: @main-color;
+  .labelnav {
+    .BaronNeue();
+    font-size: 18px;
+    color: @accent-color;
+    padding: 0;
+  }
+}
+.navcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  align-content: start;
+  .item {
+    flex: 0 0 auto;
+    margin: 4px;
+  }
+}
+
+// End of navigation row
+
+// Content row
+
+.content {
+  .labelcontent {
+    .BaronNeue();
+    font-size: 14px;
+    color: @main-color;
+  }
+  .editor {
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+    border: 1px @main-color solid;
+    -webkit-border-radius: 0px 10px;
+    -moz-border-radius: 0px 10px;
+    border-radius: 0px 10px;
+  }
+}
+
+.contcontainer {
+  justify-content: center;
+  text-align: center;
+  align-items: auto;
+  align-content: start;
+  .item {
+    margin: 4px;
+  }
+}
+.contcontainer:after {
+  display: block;
+  margin: 12px;
+  flex: 999 999 auto;
+}
+
+.parameters {
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  table {
+    padding: 5px;
+    border: 2px @main-color solid;
+    th {
+      background: @main-color;
+      .BaronNeue();
+      font-size: 16px;
+      color: @accent-color;
+      height: 30px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 2px @main-color solid;
+      input[type="number"] {
+        background: @accent-color;
+        text-align: center;
+        border: 0;
+        width: 30px;
+        height: 30px;
+      }
+      input[type="number"]:focus {
+        background: @accent-color;
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    td {
+      .BaronNeue();
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: center;
+      input[type="number"] {
+        text-align: center;
+        border: 0;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+      }
+      input[type="number"]:focus {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    td:first-child {
+      width: 150px;
+    }
+    .lastchild {
+      width: 30px;
+      height: 30px;
+      background: @accent-color;
+    }
+  }
+}
+.atutsImplants {
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.combat {
+  input[type="number"] {
+    background: none;
+    width: 50px;
+    text-align: center;
+    border: 1 @main-color solid;
+  }
+  input[type="number"]:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  table {
+    padding: 5px;
+    text-align: center;
+    .limitedwidth {
+      width: 85px;
+    }
+    .namingwidth {
+      width: 120px;
+    }
+    td:first-child,
+    th:first-child {
+      border-left: none;
+    }
+    td:last-child,
+    th:last-child {
+      border-right: none;
+    }
+    th,
+    td {
+      padding: 3px;
+    }
+    th {
+      border-left: 1px @main-color solid;
+      border-right: 1px @main-color solid;
+      background: @main-color;
+      .BaronNeue();
+      font-size: 13px;
+      color: @accent-color;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    td {
+      border-left: 1px @main-color solid;
+      border-right: 1px @main-color solid;
+      .MyriadPro();
+      font-size: 11px;
+    }
+  }
+}
+
+.entropicPowers {
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.equipment {
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 97%;
+    .editor {
+      text-align: left;
+    }
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.notes {
+  .left {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    .editor {
+      text-align: left;
+    }
+  }
+  .center {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    .editor {
+      text-align: left;
+    }
+  }
+}
+
+// testowe
+.columnAlternative {
+  display: inline-block;
+  vertical-align: top;
+}

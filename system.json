@@ -14,9 +14,13 @@
   "esmodules": ["midguardrpg.js"],
   "styles": ["midguardrpg.css"],
   "packs": [],
-  "manifest": [],
-  "url": [],
-  "download": [],
+  "manifest": [
+    "https://github.com/arturkonczalski/Midguard-RPG-Official/blob/main/system.json"
+  ],
+  "url": ["https://github.com/arturkonczalski/Midguard-RPG-Official"],
+  "download": [
+    "https://github.com/arturkonczalski/Midguard-RPG-Official/archive/refs/heads/main.zip"
+  ],
   "languages": [
     {
       "lang": "pl",

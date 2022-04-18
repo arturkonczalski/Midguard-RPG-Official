@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["player", "npc"],
+    "types": ["character", "npc"],
     "templates": {
       "common": {
         "notes": "",
@@ -111,229 +111,367 @@
             "self": 0,
             "total": 0
           }
-        }
-      }
-    },
-    "player": {
-      "templates": ["common"],
-      "exp": {
-        "total": 0,
-        "spent": 0
-      },
-      "moves": {
-        "value": 0,
-        "max": 0
-      },
-      "nornBless": {
-        "value": 0,
-        "max": 0
-      },
-      "luck": {
-        "value": 0,
-        "max:": 0
-      },
-      "energyProtection": {
-        "value": 0,
-        "max": 0
-      },
-      "class": "",
-      "race": "",
-      "rank": "",
-      "mysticlanguage": "",
-      "motivation": "",
-      "gender": "",
-      "age": "",
-      "traits": {
-        "first": {
-          "name": "",
-          "description": ""
         },
-        "second": {
+        "exp": {
+          "total": 0,
+          "spent": 0
+        },
+        "moves": {
+          "value": 0,
+          "max": 0
+        },
+        "nornBless": {
+          "value": 0,
+          "max": 0
+        },
+        "luck": {
+          "value": 0,
+          "max:": 0
+        },
+        "energyProtection": {
+          "value": 0,
+          "max": 0
+        },
+        "class": "",
+        "race": "",
+        "rank": "",
+        "mysticlanguage": "",
+        "motivation": "",
+        "gender": "",
+        "age": "",
+        "combatRngOffOne": {
           "name": "",
-          "description": ""
+          "skillSum": 0,
+          "attacks": "",
+          "shortDistance": "",
+          "midDistance": "",
+          "longDistance": "",
+          "extrDistance": "",
+          "damage": ""
+        },
+        "combatRngOffTwo": {
+          "name": "",
+          "skillSum": 0,
+          "attacks": "",
+          "shortDistance": "",
+          "midDistance": "",
+          "longDistance": "",
+          "extrDistance": "",
+          "damage": ""
+        },
+        "combatRngOffThree": {
+          "name": "",
+          "skillSum": 0,
+          "attacks": "",
+          "shortDistance": "",
+          "midDistance": "",
+          "longDistance": "",
+          "extrDistance": "",
+          "damage": ""
+        },
+        "combatRngDefOne": {
+          "basic": 0,
+          "atuts": 0,
+          "bonuses": 0,
+          "armorShield": 0
+        },
+        "combatRngDefTwo": {
+          "basic": 0,
+          "atuts": 0,
+          "bonuses": 0,
+          "armorShield": 0
+        },
+        "combatRngDefThree": {
+          "basic": 0,
+          "atuts": 0,
+          "bonuses": 0,
+          "armorShield": 0
+        },
+        "combatCloOffOne": {
+          "name": "",
+          "type": "",
+          "sumSkill": "",
+          "accuracy": "",
+          "hits": "",
+          "damage": ""
+        },
+        "combatCloOffTwo": {
+          "name": "",
+          "type": "",
+          "sumSkill": "",
+          "accuracy": "",
+          "hits": "",
+          "damage": ""
+        },
+        "combatCloOffThree": {
+          "name": "",
+          "type": "",
+          "sumSkill": "",
+          "accuracy": "",
+          "hits": "",
+          "damage": ""
+        },
+        "combatCloDefOne": {
+          "basic": 0,
+          "MWorMC": 0,
+          "bonuses": 0,
+          "weaponDef": 0,
+          "armorShield": 0
+        },
+        "combatCloDefTwo": {
+          "basic": 0,
+          "MWorMC": 0,
+          "bonuses": 0,
+          "weaponDef": 0,
+          "armorShield": 0
+        },
+        "combatCloDefThree": {
+          "basic": 0,
+          "MWorMC": 0,
+          "bonuses": 0,
+          "weaponDef": 0,
+          "armorShield": 0
+        },
+        "combatGrenadeOne": {
+          "name": "",
+          "explosionRadius": "",
+          "damage": ""
+        },
+        "combatGrenadeTwo": {
+          "name": "",
+          "explosionRadius": "",
+          "damage": ""
+        },
+        "combatGrenadeThree": {
+          "name": "",
+          "explosionRadius": "",
+          "damage": ""
+        },
+        "combatArmorsOne": {
+          "name": "",
+          "closeCombat": "",
+          "ballistic": ""
+        },
+        "combatArmorsTwo": {
+          "name": "",
+          "closeCombat": "",
+          "ballistic": ""
+        },
+        "combatArmorsThree": {
+          "name": "",
+          "closeCombat": "",
+          "ballistic": ""
+        },
+        "combatShieldOne": {
+          "name": "",
+          "closeDef": "",
+          "rangeDef": ""
+        },
+        "combatShieldTwo": {
+          "name": "",
+          "closeDef": "",
+          "rangeDef": ""
+        },
+        "combatShieldThree": {
+          "name": "",
+          "closeDef": "",
+          "rangeDef": ""
+        },
+        "atuts": {
+          "one": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "two": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "three": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "four": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "five": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "six": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "seven": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "eight": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "nine": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          },
+          "ten": {
+            "name": "",
+            "requirement": "",
+            "activation": "",
+            "rule": ""
+          }
+        },
+        "implants": {
+          "one": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "two": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "three": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "four": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "five": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "six": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "seven": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "eight": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "nine": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          },
+          "ten": {
+            "name": "",
+            "requirement": "",
+            "neurostability": "",
+            "description": "",
+            "rules": ""
+          }
+        },
+        "traits": {
+          "one": {
+            "name": "",
+            "description": ""
+          },
+          "two": {
+            "name": "",
+            "description": ""
+          },
+          "three": {
+            "name": "",
+            "description": ""
+          }
         }
       },
-      "combatRngOffOne": {
-        "name": "",
-        "skillSum": 0,
-        "attacks": "",
-        "shortDistance": "",
-        "midDistance": "",
-        "longDistance": "",
-        "extrDistance": "",
-        "damage": ""
+      "character": {
+        "templates": ["common"]
       },
-      "combatRngOffTwo": {
-        "name": "",
-        "skillSum": 0,
-        "attacks": "",
-        "shortDistance": "",
-        "midDistance": "",
-        "longDistance": "",
-        "extrDistance": "",
-        "damage": ""
-      },
-      "combatRngOffThree": {
-        "name": "",
-        "skillSum": 0,
-        "attacks": "",
-        "shortDistance": "",
-        "midDistance": "",
-        "longDistance": "",
-        "extrDistance": "",
-        "damage": ""
-      },
-      "combatRngDefOne": {
-        "basic": 0,
-        "atuts": 0,
-        "bonuses": 0,
-        "armorShield": 0
-      },
-      "combatRngDefTwo": {
-        "basic": 0,
-        "atuts": 0,
-        "bonuses": 0,
-        "armorShield": 0
-      },
-      "combatRngDefThree": {
-        "basic": 0,
-        "atuts": 0,
-        "bonuses": 0,
-        "armorShield": 0
-      },
-      "combatCloOffOne": {
-        "name": "",
-        "type": "",
-        "sumSkill": "",
-        "accuracy": "",
-        "hits": "",
-        "damage": ""
-      },
-      "combatCloOffTwo": {
-        "name": "",
-        "type": "",
-        "sumSkill": "",
-        "accuracy": "",
-        "hits": "",
-        "damage": ""
-      },
-      "combatCloOffThree": {
-        "name": "",
-        "type": "",
-        "sumSkill": "",
-        "accuracy": "",
-        "hits": "",
-        "damage": ""
-      },
-      "combatCloDefOne": {
-        "basic": 0,
-        "MWorMC": 0,
-        "bonuses": 0,
-        "weaponDef": 0,
-        "armorShield": 0
-      },
-      "combatCloDefTwo": {
-        "basic": 0,
-        "MWorMC": 0,
-        "bonuses": 0,
-        "weaponDef": 0,
-        "armorShield": 0
-      },
-      "combatCloDefThree": {
-        "basic": 0,
-        "MWorMC": 0,
-        "bonuses": 0,
-        "weaponDef": 0,
-        "armorShield": 0
-      },
-      "combatGrenadeOne": {
-        "name": "",
-        "explosionRadius": "",
-        "damage": ""
-      },
-      "combatGrenadeTwo": {
-        "name": "",
-        "explosionRadius": "",
-        "damage": ""
-      },
-      "combatGrenadeThree": {
-        "name": "",
-        "explosionRadius": "",
-        "damage": ""
-      },
-      "combatArmorsOne": {
-        "name": "",
-        "closeCombat": "",
-        "ballistic": ""
-      },
-      "combatArmorsTwo": {
-        "name": "",
-        "closeCombat": "",
-        "ballistic": ""
-      },
-      "combatArmorsThree": {
-        "name": "",
-        "closeCombat": "",
-        "ballistic": ""
-      },
-      "combatShieldOne": {
-        "name": "",
-        "closeDef": "",
-        "rangeDef": ""
-      },
-      "combatShieldTwo": {
-        "name": "",
-        "closeDef": "",
-        "rangeDef": ""
-      },
-      "combatShieldThree": {
-        "name": "",
-        "closeDef": "",
-        "rangeDef": ""
+      "npc": {
+        "templates": ["common"]
       }
     },
-    "npc": {
-      "templates": ["common"]
-    }
-  },
-  "Item": {
-    "types": [
-      "meleeWeapon",
-      "shortWeapon",
-      "longWeapon",
-      "throwWeapon",
-      "armor",
-      "shield",
-      "energyShield",
-      "items",
-      "vehicle"
-    ],
-    "templates": {
-      "itemDescription": {
-        "description": "Description"
+    "Item": {
+      "types": [
+        "meleeWeapon",
+        "shortWeapon",
+        "longWeapon",
+        "throwWeapon",
+        "armor",
+        "shield",
+        "energyShield",
+        "items",
+        "vehicle"
+      ],
+      "templates": {
+        "itemDescription": {
+          "description": "Description"
+        }
+      },
+      "meleeWeapon": {
+        "templates": ["itemDescription"],
+        "type": "L",
+        "damage": 0,
+        "accuracy": 0,
+        "defense": 0,
+        "specialRules": ""
+      },
+      "shortWeapon": {
+        "templates": ["itemDescription"],
+        "damage": 0,
+        "accuracy": 0,
+        "attacks": 0,
+        "specialRules": ""
+      },
+      "longWeapon": {
+        "templates": ["itemDescription"],
+        "damage": 0,
+        "accuracy": 0,
+        "attacks": 0,
+        "specialRules": ""
       }
-    },
-    "meleeWeapon": {
-      "templates": ["itemDescription"],
-      "type": "L",
-      "damage": 0,
-      "accuracy": 0,
-      "defense": 0,
-      "specialRules": ""
-    },
-    "shortWeapon": {
-      "templates": ["itemDescription"],
-      "damage": 0,
-      "accuracy": 0,
-      "attacks": 0,
-      "specialRules": ""
-    },
-    "longWeapon": {
-      "templates": ["itemDescription"],
-      "damage": 0,
-      "accuracy": 0,
-      "attacks": 0,
-      "specialRules": ""
     }
   }
 }

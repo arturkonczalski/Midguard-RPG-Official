@@ -3,7 +3,7 @@ export default class midguardrpgCharacterSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       width: 1100,
       height: 800,
-      classes: ["midguardrpg", "sheet", "player"],
+      classes: ["midguardrpg", "sheet", "character"],
       tabs: [
         {
           navSelector: ".sheet-tabs",

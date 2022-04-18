@@ -1,0 +1,25 @@
+<div class="left">
+  <label class="labelcontent">
+    {{localize "MIDGUARD.notes"}}
+  </label>
+  {{editor
+    content=data.data.notes
+    target="data.notes"
+    button=true
+    owner=owner
+    editable=editable
+  }}
+</div>
+<div class="right">
+  <label class="labelcontent">
+    {{localize "MIDGUARD.history"}}
+  </label>
+  {{editor
+    content=data.data.history
+    target="data.history"
+    button=true
+    owner=owner
+    editable=editable
+  }}
+</div>
+<div style="clear:both"></div>

@@ -90,6 +90,17 @@
   "MIDGUARD.CombatBalisticDefense": "Obrona dystansowa",
   "MIDGUARD.CombatSpecialRules": "Zasady specjalne",
 
+  "MIDGUARD.AtutsRequirement": "Wymagania",
+  "MIDGUARD.AtutsActivation": "Aktywacja",
+  "MIDGUARD.AtutsRule": "Zasada",
+
+  "MIDGUARD.ImplantsRequirement": "Wymagania",
+  "MIDGUARD.ImplantsNeurostability": "Neurostabilność",
+  "MIDGUARD.ImplantsDescription": "Opis",
+  "MIDGUARD.ImplantsRules": "Działanie",
+
+  "MIDGUARD.TraitsDescription": "Opis",
+
   "MIDGUARD.WeaponTypesNone": "",
   "MIDGUARD.WeaponTypesLight": "L",
   "MIDGUARD.WeaponTypesOnehanded": "J",

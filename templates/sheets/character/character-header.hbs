@@ -1,0 +1,225 @@
+<div class="details">
+  <div class="columnAlternative">
+    <img
+      class="profile-img"
+      src="{{actor.img}}"
+      data-edit="img"
+      title="{{actor.name}}"
+    />
+  </div>
+  <div class="columnAlternative">
+    <div class="row">
+      <div class="columnAlternative rowfirst">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterRace"
+            }}</label>
+        </div>
+        <div>
+          <input name="data.race" type="text" value="{{data.data.race}}" />
+        </div>
+      </div>
+      <div class="columnAlternative rowfirst">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterClass"
+            }}</label>
+        </div>
+        <div>
+          <input name="data.class" type="text" value="{{data.data.class}}" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnAlternative rowsecond">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterRank"
+            }}</label>
+        </div>
+        <div>
+          <input name="data.rank" type="text" value="{{data.data.rank}}" />
+        </div>
+      </div>
+      <div class="columnAlternative rowsecond">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterMysticLanguage"
+            }}</label>
+        </div>
+        <div>
+          <input
+            name="data.mysticlanguage"
+            type="text"
+            value="{{data.data.mysticlanguage}}"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnAlternative rowthirda">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterMotivation"
+            }}</label>
+        </div>
+        <div>
+          <input
+            name="data.motivation"
+            type="text"
+            value="{{data.data.motivation}}"
+          />
+        </div>
+      </div>
+      <div class="columnAlternative rowthirdb">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterGender"
+            }}</label>
+        </div>
+        <div>
+          <input name="data.gender" type="text" value="{{data.data.gender}}" />
+        </div>
+      </div>
+      <div class="columnAlternative rowthirdb">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterAge"
+            }}</label>
+        </div>
+        <div>
+          <input name="data.age" type="number" value="{{data.data.age}}" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnAlternative rowforth">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterLuck"
+            }}</label>
+        </div>
+        <div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.luck.value"
+              value="{{data.data.luck.value}}"
+              data-dtype="Number"
+            />
+          </div>
+          <div class="columnAlternative slash"> / </div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.luck.max"
+              value="{{data.data.luck.max}}"
+              data-dtype="Number"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="columnAlternative rowforth">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterMoves"
+            }}</label>
+        </div>
+        <div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.moves.value"
+              value="{{data.data.moves.value}}"
+              data-dtype="Number"
+            />
+          </div>
+          <div class="columnAlternative slash"> / </div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.moves.max"
+              value="{{data.data.moves.max}}"
+              data-dtype="Number"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="columnAlternative rowforth">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.CharacterNornBless"
+            }}</label>
+        </div>
+        <div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.nornBless.value"
+              value="{{data.data.nornBless.value}}"
+              data-dtype="Number"
+            />
+          </div>
+          <div class="columnAlternative slash"> / </div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.nornBless.max"
+              value="{{data.data.nornBless.max}}"
+              data-dtype="Number"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="columnAlternative rowforth">
+        <div>
+          <label class="resource-label labeldetails">{{localize
+              "MIDGUARD.SecondaryParametersVitality"
+            }}</label>
+        </div>
+        <div>
+          <div class="columnAlternative">
+            <input
+              type="number"
+              name="data.vitality.value"
+              value="{{data.data.vitality.value}}"
+              data-dtype="Number"
+            />
+          </div>
+          <div class="columnAlternative slash"> / </div>
+          <div class="columnAlternative healthmax">
+            {{timesFivePlusTen data.data.bodyBuild placeholder="0"}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnAlternative rowfifth">
+        <label class="resource-label labeldetails">{{localize
+            "MIDGUARD.CharacterExpTotal"
+          }}</label>
+      </div>
+      <div class="columnAlternative rowfifth">
+        <input
+          type="number"
+          name="data.exp.total"
+          value="{{data.data.exp.total}}"
+          data-dtype="Number"
+        />
+      </div>
+      <div class="columnAlternative rowfifth">
+        <label class="resource-label labeldetails">{{localize
+            "MIDGUARD.CharacterExpSpent"
+          }}</label>
+      </div>
+      <div class="columnAlternative rowfifth">
+        <input
+          type="number"
+          name="data.exp.spent"
+          value="{{data.data.exp.spent}}"
+          data-dtype="Number"
+        />
+      </div>
+    </div>
+  </div>
+</div>

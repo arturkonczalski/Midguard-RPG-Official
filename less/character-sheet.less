@@ -338,6 +338,10 @@
     display: inline-block;
     vertical-align: top;
   }
+  .scrolling {
+    overflow: scroll;
+    height: 500px;
+  }
   .title {
     border: 0;
     border-left: 1px @main-color solid;
@@ -358,93 +362,84 @@
   }
   .editor {
     text-align: left;
-    height: 180px;
+    height: 150px;
     width: 100%;
   }
   table {
     width: 300px;
+    border: none;
   }
-  .wrap-collabsible {
-    .inputShort {
-      max-width: 100px;
-      border: none;
-    }
-    .inputLong {
-      width: 240px;
-      color: @accent-color;
-      .BaronNeue();
-      border: none;
-    }
-    .inputLong::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: @accent-color;
-      opacity: 1; /* Firefox */
-    }
-
-    .inputLong:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: @accent-color;
-    }
-
-    .inputLong::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: @accent-color;
-    }
+  .atutsTableFirst {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
   }
-
-  input[type="checkbox"] {
-    display: none;
+  .atutsTable {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    padding: 5px;
   }
-
-  .lbl-toggle {
-    display: block;
-    text-align: center;
+  .implantsTableFirst {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .implantsTable {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  .traitsTableFirst {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .traitsTable {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  .inputShort {
+    max-width: 100px;
+    border: none;
+  }
+  .inputLong {
+    width: 240px;
     color: @accent-color;
-    background: @secondary-color;
-    cursor: pointer;
-    transition: all 0.25s ease-out;
+    .BaronNeue();
+    border: none;
+  }
+  .inputLong::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @accent-color;
+    opacity: 1; /* Firefox */
   }
 
-  .lbl-toggle:hover {
-    color: #7c5a0b;
+  .inputLong:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: @accent-color;
   }
 
-  .lbl-toggle::before {
-    content: " ";
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentColor;
-    vertical-align: middle;
-    margin-right: 0.7rem;
-    transform: translateY(-2px);
-    transition: transform 0.2s ease-out;
+  .inputLong::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: @accent-color;
   }
-
-  .toggle:checked + .lbl-toggle::before {
-    transform: rotate(90deg) translateX(-3px);
+  .inputName {
+    width: 240px;
+    color: @main-color;
+    .BaronNeue();
+    border: none;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
-
-  .collapsible-content {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.25s ease-in-out;
-  }
-
-  .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 100vh;
-  }
-
-  .toggle:checked + .lbl-toggle {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .collapsible-content .content-inner {
-    background: @accent-color;
-    border-bottom: 1px solid rgba(250, 224, 66, 0.45);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+  .inputName::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @main-color;
+    opacity: 1; /* Firefox */
   }
 }
 .combat {
@@ -555,6 +550,21 @@
     display: inline-block;
     vertical-align: top;
   }
+  .scrolling {
+    overflow: scroll;
+    height: 500px;
+  }
+  .powerTableFirst {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .powerTable {
+    border: 2px @main-color solid;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
   .title {
     border: 0;
     border-left: 1px @main-color solid;
@@ -579,105 +589,48 @@
     width: 100%;
     min-width: 150px;
   }
-  .wrap-collabsible {
-    .inputShort {
-      max-width: 100px;
-      border: none;
-      text-align: left;
-    }
-    .inputName {
-      width: 240px;
-      color: @accent-color;
-      .BaronNeue();
-      border: none;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    .inputName::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: @accent-color;
-      opacity: 1; /* Firefox */
-    }
-    .inputLong {
-      width: 240px;
-      color: #000000;
-      border: none;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    .inputLong::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: #000000;
-      opacity: 1; /* Firefox */
-    }
-
-    .inputLong:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: @accent-color;
-    }
-
-    .inputLong::-ms-input-placeholder {
-      /* Microsoft Edge */
-      color: @accent-color;
-    }
+  .inputShort {
+    max-width: 100px;
+    border: none;
+    text-align: left;
+  }
+  .inputName {
+    width: 240px;
+    color: @main-color;
+    .BaronNeue();
+    border: none;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .inputName::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @main-color;
+    opacity: 1; /* Firefox */
+  }
+  .inputLong {
+    width: 240px;
+    color: #000000;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .inputLong::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    opacity: 1; /* Firefox */
   }
 
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  .lbl-toggle {
-    display: block;
-    text-align: center;
+  .inputLong:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: @accent-color;
-    background: @secondary-color;
-    cursor: pointer;
-    transition: all 0.25s ease-out;
   }
 
-  .lbl-toggle:hover {
-    color: #7c5a0b;
-  }
-
-  .lbl-toggle::before {
-    content: " ";
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentColor;
-    vertical-align: middle;
-    margin-right: 0.7rem;
-    transform: translateY(-2px);
-    transition: transform 0.2s ease-out;
-  }
-
-  .toggle:checked + .lbl-toggle::before {
-    transform: rotate(90deg) translateX(-3px);
-  }
-
-  .collapsible-content {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.25s ease-in-out;
-  }
-
-  .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 100vh;
-  }
-
-  .toggle:checked + .lbl-toggle {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .collapsible-content .content-inner {
-    background: @accent-color;
-    border-bottom: 1px solid rgba(250, 224, 66, 0.45);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+  .inputLong::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: @accent-color;
   }
 }
-
 .equipment {
   .left {
     margin: 5px;

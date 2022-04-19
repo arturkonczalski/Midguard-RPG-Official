@@ -22,7 +22,7 @@
     }
   ],
   "initiative": "",
-  "manifest": "https://github.com/arturkonczalski/Midguard-RPG-Official/archive/refs/tags/system.json",
+  "manifest": "https://github.com/arturkonczalski/Midguard-RPG-Official/releases/download/v0.0.1-alpha/system.json",
   "url": "https://github.com/arturkonczalski/Midguard-RPG-Official",
-  "download": "https://github.com/arturkonczalski/Midguard-RPG-Official/archive/refs/tags/MidguardRPG.zip"
+  "download": "https://github.com/arturkonczalski/Midguard-RPG-Official/releases/download/v0.0.1-alpha/system.zip"
 }

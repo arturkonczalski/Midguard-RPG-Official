@@ -424,6 +424,108 @@
             "name": "",
             "description": ""
           }
+        },
+        "entropicPower": {
+          "one": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "two": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "three": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "four": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "five": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "six": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "seven": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "eight": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "nine": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          },
+          "ten": {
+            "name": "",
+            "range": "",
+            "testLvl": "",
+            "entropy": "",
+            "description": "",
+            "charge": "",
+            "strongCharge": "",
+            "epicCharge": ""
+          }
         }
       },
       "character": {

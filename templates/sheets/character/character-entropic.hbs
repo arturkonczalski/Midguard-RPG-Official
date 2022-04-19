@@ -1,4 +1,954 @@
-<div class="left">4</div>
-<div class="center">5</div>
-<div class="right">6</div>
-<div style="clear:both;"></div>
+<div class="left">
+  <div class="title">{{localize "MIDGUARD.entropicPowers"}}</div>
+  <div class="wrap-collabsible">
+    <input id="collapsible31" class="toggle" type="checkbox" />
+    <label for="collapsible31" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.one.name"
+        type="text"
+        value="{{data.data.entropicPower.one.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.one.range"
+            type="text"
+            value="{{data.data.entropicPower.one.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.one.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.one.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.one.entropy"
+            type="text"
+            value="{{data.data.entropicPower.one.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.one.description
+            target="data.entropicPower.one.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.one.charge
+            target="data.entropicPower.one.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.one.strongCharge
+            target="data.entropicPower.one.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.one.epicCharge
+            target="data.entropicPower.one.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible32" class="toggle" type="checkbox" />
+    <label for="collapsible32" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.two.name"
+        type="text"
+        value="{{data.data.entropicPower.two.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.two.range"
+            type="text"
+            value="{{data.data.entropicPower.two.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.two.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.two.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.two.entropy"
+            type="text"
+            value="{{data.data.entropicPower.two.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.two.description
+            target="data.entropicPower.two.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.two.charge
+            target="data.entropicPower.two.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.two.strongCharge
+            target="data.entropicPower.two.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.two.epicCharge
+            target="data.entropicPower.two.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible33" class="toggle" type="checkbox" />
+    <label for="collapsible33" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.three.name"
+        type="text"
+        value="{{data.data.entropicPower.three.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.three.range"
+            type="text"
+            value="{{data.data.entropicPower.three.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.three.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.three.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.three.entropy"
+            type="text"
+            value="{{data.data.entropicPower.three.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.three.description
+            target="data.entropicPower.three.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.three.charge
+            target="data.entropicPower.three.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.three.strongCharge
+            target="data.entropicPower.three.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.three.epicCharge
+            target="data.entropicPower.three.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible34" class="toggle" type="checkbox" />
+    <label for="collapsible34" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.four.name"
+        type="text"
+        value="{{data.data.entropicPower.four.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.four.range"
+            type="text"
+            value="{{data.data.entropicPower.four.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.four.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.four.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.four.entropy"
+            type="text"
+            value="{{data.data.entropicPower.four.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.four.description
+            target="data.entropicPower.four.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.four.charge
+            target="data.entropicPower.four.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.four.strongCharge
+            target="data.entropicPower.four.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.four.epicCharge
+            target="data.entropicPower.four.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible35" class="toggle" type="checkbox" />
+    <label for="collapsible35" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.five.name"
+        type="text"
+        value="{{data.data.entropicPower.five.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.five.range"
+            type="text"
+            value="{{data.data.entropicPower.five.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.five.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.five.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.five.entropy"
+            type="text"
+            value="{{data.data.entropicPower.five.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.five.description
+            target="data.entropicPower.five.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.five.charge
+            target="data.entropicPower.five.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.five.strongCharge
+            target="data.entropicPower.five.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.five.epicCharge
+            target="data.entropicPower.five.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible36" class="toggle" type="checkbox" />
+    <label for="collapsible36" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.six.name"
+        type="text"
+        value="{{data.data.entropicPower.six.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.six.range"
+            type="text"
+            value="{{data.data.entropicPower.six.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.six.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.six.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.six.entropy"
+            type="text"
+            value="{{data.data.entropicPower.six.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.six.description
+            target="data.entropicPower.six.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.six.charge
+            target="data.entropicPower.six.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.six.strongCharge
+            target="data.entropicPower.six.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.six.epicCharge
+            target="data.entropicPower.six.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible37" class="toggle" type="checkbox" />
+    <label for="collapsible37" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.seven.name"
+        type="text"
+        value="{{data.data.entropicPower.seven.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.seven.range"
+            type="text"
+            value="{{data.data.entropicPower.seven.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.seven.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.seven.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.seven.entropy"
+            type="text"
+            value="{{data.data.entropicPower.seven.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.seven.description
+            target="data.entropicPower.seven.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.seven.charge
+            target="data.entropicPower.seven.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.seven.strongCharge
+            target="data.entropicPower.seven.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.seven.epicCharge
+            target="data.entropicPower.seven.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible38" class="toggle" type="checkbox" />
+    <label for="collapsible38" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.eight.name"
+        type="text"
+        value="{{data.data.entropicPower.eight.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.eight.range"
+            type="text"
+            value="{{data.data.entropicPower.eight.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.eight.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.eight.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.eight.entropy"
+            type="text"
+            value="{{data.data.entropicPower.eight.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.eight.description
+            target="data.entropicPower.eight.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.eight.charge
+            target="data.entropicPower.eight.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.eight.strongCharge
+            target="data.entropicPower.eight.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.eight.epicCharge
+            target="data.entropicPower.eight.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible39" class="toggle" type="checkbox" />
+    <label for="collapsible39" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.nine.name"
+        type="text"
+        value="{{data.data.entropicPower.nine.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.nine.range"
+            type="text"
+            value="{{data.data.entropicPower.nine.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.nine.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.nine.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.nine.entropy"
+            type="text"
+            value="{{data.data.entropicPower.nine.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.nine.description
+            target="data.entropicPower.nine.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.nine.charge
+            target="data.entropicPower.nine.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.nine.strongCharge
+            target="data.entropicPower.nine.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.nine.epicCharge
+            target="data.entropicPower.nine.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible40" class="toggle" type="checkbox" />
+    <label for="collapsible40" class="lbl-toggle">
+      <input
+        class="inputName"
+        name="data.entropicPower.ten.name"
+        type="text"
+        value="{{data.data.entropicPower.ten.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicRange"}}</span><br
+          />
+          <input
+            class="inputLong"
+            name="data.entropicPower.ten.range"
+            type="text"
+            value="{{data.data.entropicPower.ten.range}}"
+            placeholder="{{localize 'MIDGUARD.EntropicRange'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicTestLvl"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.ten.testLvl"
+            type="text"
+            value="{{data.data.entropicPower.ten.testLvl}}"
+            placeholder="{{localize 'MIDGUARD.EntropicTestLvl'}}"
+          /><br />
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEntropy"
+            }}</span><br />
+          <input
+            class="inputLong"
+            name="data.entropicPower.ten.entropy"
+            type="text"
+            value="{{data.data.entropicPower.ten.entropy}}"
+            placeholder="{{localize 'MIDGUARD.EntropicEntropy'}}"
+          />
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicDescription"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.ten.description
+            target="data.entropicPower.ten.description"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize "MIDGUARD.EntropicCharge"}}</span>
+          {{editor
+            content=data.data.entropicPower.ten.charge
+            target="data.entropicPower.ten.charge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicStrongCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.ten.strongCharge
+            target="data.entropicPower.ten.strongCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="columnAlternative">
+          <span class="subtitle">{{localize
+              "MIDGUARD.EntropicEpicCharge"
+            }}</span>
+          {{editor
+            content=data.data.entropicPower.ten.epicCharge
+            target="data.entropicPower.ten.epicCharge"
+            button=true
+            owner=owner
+            editable=editable
+          }}
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="right">
+  <table>
+    <tr>
+      <td>Suma Hekseri</td>
+    </tr>
+    <tr>
+      <td>{{sum data.data.entropy data.data.hekseri.self}}</td>
+    </tr>
+  </table>
+</div>
+<div class="clearer"></div>

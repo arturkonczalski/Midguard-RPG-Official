@@ -101,6 +101,14 @@
 
   "MIDGUARD.TraitsDescription": "Opis",
 
+  "MIDGUARD.EntropicRange": "Zasięg",
+  "MIDGUARD.EntropicTestLvl": "Poziom trudności",
+  "MIDGUARD.EntropicEntropy": "Entropia",
+  "MIDGUARD.EntropicDescription": "Działanie",
+  "MIDGUARD.EntropicCharge": "Podbicie",
+  "MIDGUARD.EntropicStrongCharge": "Potężne podbicie",
+  "MIDGUARD.EntropicEpicCharge": "Epickie podbicie",
+
   "MIDGUARD.WeaponTypesNone": "",
   "MIDGUARD.WeaponTypesLight": "L",
   "MIDGUARD.WeaponTypesOnehanded": "J",

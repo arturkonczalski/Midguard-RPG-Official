@@ -16,13 +16,13 @@ export default class midguardrpgCharacterSheet extends ActorSheet {
   get template() {
     return `systems/midguardrpg/templates/sheets/${this.actor.data.type}-sheet.hbs`;
   }
-
   getData() {
     const data = super.getData();
     data.config = CONFIG.midguardrpg;
     return data;
   }
 }
+
 let myLabels = document.querySelectorAll(".lbl-toggle");
 
 Array.from(myLabels).forEach((label) => {

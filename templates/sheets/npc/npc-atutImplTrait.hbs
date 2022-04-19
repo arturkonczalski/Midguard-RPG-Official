@@ -1,4 +1,1224 @@
-<div class="left">1</div>
-<div class="center">2</div>
-<div class="right">3</div>
+<div class="left">
+  <div class="title">{{localize "MIDGUARD.Atuts"}}</div>
+  <div class="wrap-collabsible">
+    <input id="collapsible1" class="toggle" type="checkbox" />
+    <label for="collapsible1" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.one.name"
+        type="text"
+        value="{{data.data.atuts.one.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.one.requirement"
+                type="text"
+                value="{{data.data.atuts.one.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.one.activation"
+                type="text"
+                value="{{data.data.atuts.one.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.one.rule
+                target="data.atuts.one.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible2" class="toggle" type="checkbox" />
+    <label for="collapsible2" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.two.name"
+        type="text"
+        value="{{data.data.atuts.two.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.two.requirement"
+                type="text"
+                value="{{data.data.atuts.two.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.two.activation"
+                type="text"
+                value="{{data.data.atuts.two.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.two.rule
+                target="data.atuts.two.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible3" class="toggle" type="checkbox" />
+    <label for="collapsible3" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.three.name"
+        type="text"
+        value="{{data.data.atuts.three.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.three.requirement"
+                type="text"
+                value="{{data.data.atuts.three.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.three.activation"
+                type="text"
+                value="{{data.data.atuts.three.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.three.rule
+                target="data.atuts.three.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible4" class="toggle" type="checkbox" />
+    <label for="collapsible4" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.four.name"
+        type="text"
+        value="{{data.data.atuts.four.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.four.requirement"
+                type="text"
+                value="{{data.data.atuts.four.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.four.activation"
+                type="text"
+                value="{{data.data.atuts.four.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.four.rule
+                target="data.atuts.four.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible5" class="toggle" type="checkbox" />
+    <label for="collapsible5" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.five.name"
+        type="text"
+        value="{{data.data.atuts.five.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td colspan="2">
+            </td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.five.requirement"
+                type="text"
+                value="{{data.data.atuts.five.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.five.activation"
+                type="text"
+                value="{{data.data.atuts.five.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.five.rule
+                target="data.atuts.five.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible6" class="toggle" type="checkbox" />
+    <label for="collapsible6" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.six.name"
+        type="text"
+        value="{{data.data.atuts.six.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.six.requirement"
+                type="text"
+                value="{{data.data.atuts.six.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.six.activation"
+                type="text"
+                value="{{data.data.atuts.six.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.six.rule
+                target="data.atuts.six.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible7" class="toggle" type="checkbox" />
+    <label for="collapsible7" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.seven.name"
+        type="text"
+        value="{{data.data.atuts.seven.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.seven.requirement"
+                type="text"
+                value="{{data.data.atuts.seven.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.seven.activation"
+                type="text"
+                value="{{data.data.atuts.seven.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.seven.rule
+                target="data.atuts.seven.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible8" class="toggle" type="checkbox" />
+    <label for="collapsible8" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.eight.name"
+        type="text"
+        value="{{data.data.atuts.eight.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.eight.requirement"
+                type="text"
+                value="{{data.data.atuts.eight.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.eight.activation"
+                type="text"
+                value="{{data.data.atuts.eight.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.eight.rule
+                target="data.atuts.eight.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible9" class="toggle" type="checkbox" />
+    <label for="collapsible9" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.nine.name"
+        type="text"
+        value="{{data.data.atuts.nine.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.nine.requirement"
+                type="text"
+                value="{{data.data.atuts.nine.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.nine.activation"
+                type="text"
+                value="{{data.data.atuts.nine.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.nine.rule
+                target="data.atuts.nine.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible10" class="toggle" type="checkbox" />
+    <label for="collapsible10" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.atuts.ten.name"
+        type="text"
+        value="{{data.data.atuts.ten.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsRequirement"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.ten.requirement"
+                type="text"
+                value="{{data.data.atuts.ten.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize "MIDGUARD.AtutsActivation"}}</td>
+            <td><input
+                class="inputShort"
+                name="data.atuts.ten.activation"
+                type="text"
+                value="{{data.data.atuts.ten.activation}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.AtutsRule"
+                }}</span>
+              {{editor
+                content=data.data.atuts.ten.rule
+                target="data.atuts.ten.rule"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="center">
+  <div class="title">{{localize "MIDGUARD.Implants"}}</div>
+  <div class="wrap-collabsible">
+    <input id="collapsible11" class="toggle" type="checkbox" />
+    <label for="collapsible11" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.one.name"
+        type="text"
+        value="{{data.data.implants.one.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.one.requirement"
+                type="text"
+                value="{{data.data.implants.one.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.one.neurostability"
+                type="text"
+                value="{{data.data.implants.one.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.one.description
+                target="data.implants.one.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.one.rules
+                target="data.implants.one.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible12" class="toggle" type="checkbox" />
+    <label for="collapsible12" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.two.name"
+        type="text"
+        value="{{data.data.implants.two.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.two.requirement"
+                type="text"
+                value="{{data.data.implants.two.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.two.neurostability"
+                type="text"
+                value="{{data.data.implants.two.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.two.description
+                target="data.implants.two.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.two.rules
+                target="data.implants.two.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible13" class="toggle" type="checkbox" />
+    <label for="collapsible13" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.three.name"
+        type="text"
+        value="{{data.data.implants.three.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.three.requirement"
+                type="text"
+                value="{{data.data.implants.three.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.three.neurostability"
+                type="text"
+                value="{{data.data.implants.three.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.three.description
+                target="data.implants.three.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.three.rules
+                target="data.implants.three.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible14" class="toggle" type="checkbox" />
+    <label for="collapsible14" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.four.name"
+        type="text"
+        value="{{data.data.implants.four.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.four.requirement"
+                type="text"
+                value="{{data.data.implants.four.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.four.neurostability"
+                type="text"
+                value="{{data.data.implants.four.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.four.description
+                target="data.implants.four.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.four.rules
+                target="data.implants.four.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible15" class="toggle" type="checkbox" />
+    <label for="collapsible15" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.five.name"
+        type="text"
+        value="{{data.data.implants.five.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.five.requirement"
+                type="text"
+                value="{{data.data.implants.five.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.five.neurostability"
+                type="text"
+                value="{{data.data.implants.five.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.five.description
+                target="data.implants.five.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.five.rules
+                target="data.implants.five.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible16" class="toggle" type="checkbox" />
+    <label for="collapsible16" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.six.name"
+        type="text"
+        value="{{data.data.implants.six.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.six.requirement"
+                type="text"
+                value="{{data.data.implants.six.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.six.neurostability"
+                type="text"
+                value="{{data.data.implants.six.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.six.description
+                target="data.implants.six.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.six.rules
+                target="data.implants.six.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible17" class="toggle" type="checkbox" />
+    <label for="collapsible17" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.seven.name"
+        type="text"
+        value="{{data.data.implants.seven.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.seven.requirement"
+                type="text"
+                value="{{data.data.implants.seven.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.seven.neurostability"
+                type="text"
+                value="{{data.data.implants.seven.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.seven.description
+                target="data.implants.seven.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.seven.rules
+                target="data.implants.seven.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible18" class="toggle" type="checkbox" />
+    <label for="collapsible18" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.eight.name"
+        type="text"
+        value="{{data.data.implants.eight.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.eight.requirement"
+                type="text"
+                value="{{data.data.implants.eight.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.eight.neurostability"
+                type="text"
+                value="{{data.data.implants.eight.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.eight.description
+                target="data.implants.eight.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.eight.rules
+                target="data.implants.eight.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible19" class="toggle" type="checkbox" />
+    <label for="collapsible19" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.nine.name"
+        type="text"
+        value="{{data.data.implants.nine.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.nine.requirement"
+                type="text"
+                value="{{data.data.implants.nine.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.nine.neurostability"
+                type="text"
+                value="{{data.data.implants.nine.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.nine.description
+                target="data.implants.nine.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.nine.rules
+                target="data.implants.nine.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible20" class="toggle" type="checkbox" />
+    <label for="collapsible20" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.implants.ten.name"
+        type="text"
+        value="{{data.data.implants.ten.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsRequirement"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.ten.requirement"
+                type="text"
+                value="{{data.data.implants.ten.requirement}}"
+              /></td>
+          </tr>
+          <tr>
+            <td class="subtitle">{{localize
+                "MIDGUARD.ImplantsNeurostability"
+              }}</td>
+            <td><input
+                class="inputShort"
+                name="data.implants.ten.neurostability"
+                type="text"
+                value="{{data.data.implants.ten.neurostability}}"
+              /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsDescription"
+                }}</span>
+              {{editor
+                content=data.data.implants.ten.description
+                target="data.implants.ten.description"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="subtitle">{{localize
+                  "MIDGUARD.ImplantsRules"
+                }}</span>
+              {{editor
+                content=data.data.implants.ten.rules
+                target="data.implants.ten.rules"
+                button=true
+                owner=owner
+                editable=editable
+              }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="right">
+  <div class="title">{{localize "MIDGUARD.Traits"}}</div>
+  <div class="wrap-collabsible">
+    <input id="collapsible21" class="toggle" type="checkbox" />
+    <label for="collapsible21" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.traits.one.name"
+        type="text"
+        value="{{data.data.traits.one.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td>
+              {{editor
+                content=data.data.traits.one.description
+                target="data.traits.one.description"
+                button=true
+                owner=owner
+                editable=editable
+                placeholder="{{localize 'TraitsDescription'}}"
+              }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible22" class="toggle" type="checkbox" />
+    <label for="collapsible22" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.traits.two.name"
+        type="text"
+        value="{{data.data.traits.two.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td>
+              {{editor
+                content=data.data.traits.two.description
+                target="data.traits.two.description"
+                button=true
+                owner=owner
+                editable=editable
+                placeholder="{{localize 'TraitsDescription'}}"
+              }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-collabsible">
+    <input id="collapsible23" class="toggle" type="checkbox" />
+    <label for="collapsible23" class="lbl-toggle">
+      <input
+        class="inputLong"
+        name="data.traits.three.name"
+        type="text"
+        value="{{data.data.traits.three.name}}"
+        placeholder="{{localize 'MIDGUARD.name'}}"
+      />
+    </label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <table>
+          <tr>
+            <td>
+              {{editor
+                content=data.data.traits.three.description
+                target="data.traits.three.description"
+                button=true
+                owner=owner
+                editable=editable
+                placeholder="{{localize 'TraitsDescription'}}"
+              }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 <div style="clear:both;"></div>

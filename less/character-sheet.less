@@ -335,13 +335,113 @@
     display: inline-block;
     vertical-align: top;
   }
+  .title {
+    border: 0;
+    border-left: 1px @main-color solid;
+    border-right: 1px @main-color solid;
+    background: @main-color;
+    .BaronNeue();
+    font-size: 14px;
+    color: @accent-color;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .subtitle {
+    .BaronNeue();
+    font-size: 14px;
+    color: @main-color;
+  }
   .editor {
     text-align: left;
-    height: 150px;
+    height: 180px;
     width: 100%;
   }
   table {
-    width: 330px;
+    width: 300px;
+  }
+  .wrap-collabsible {
+    .inputShort {
+      max-width: 100px;
+      border: none;
+    }
+    .inputLong {
+      width: 240px;
+      color: @accent-color;
+      .BaronNeue();
+      border: none;
+    }
+    .inputLong::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: @accent-color;
+      opacity: 1; /* Firefox */
+    }
+
+    .inputLong:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: @accent-color;
+    }
+
+    .inputLong::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: @accent-color;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .lbl-toggle {
+    display: block;
+    text-align: center;
+    color: @accent-color;
+    background: @secondary-color;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+
+  .lbl-toggle:hover {
+    color: #7c5a0b;
+  }
+
+  .lbl-toggle::before {
+    content: " ";
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-out;
+  }
+
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .collapsible-content .content-inner {
+    background: @accent-color;
+    border-bottom: 1px solid rgba(250, 224, 66, 0.45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
   }
 }
 .combat {
@@ -372,8 +472,8 @@
       .BaronNeue();
       font-size: 14px;
       color: @accent-color;
-      height: 20px;
       padding: 5px;
+      padding-bottom: 8px;
     }
     .limitedwidth {
       max-width: 70px;

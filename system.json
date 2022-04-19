@@ -8,7 +8,7 @@
       "email": "arturkonczalski@gmail.com"
     }
   ],
-  "version": 0.01,
+  "version": 1.0,
   "minimumCoreVersion": "9.0",
   "compatibleCoreVersion": "9.0",
   "esmodules": ["midguardrpg.js"],

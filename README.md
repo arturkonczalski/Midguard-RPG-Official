@@ -2,6 +2,11 @@
 
 Official FoundryVTT system for Midguard RPG
 
+Version 1.1
+
+- Bug fixes.
+- Added Energy Protection fields in Character Sheet.
+
 Version 1.0 contains
 
 - Simple Character and NPC sheet that is making the game playable.

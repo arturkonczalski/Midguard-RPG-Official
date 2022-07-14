@@ -8,12 +8,14 @@
       "email": "arturkonczalski@gmail.com"
     }
   ],
-  "version": 1.0,
+  "url": "https://github.com/arturkonczalski/Midguard-RPG-Official",
+  "flags": {},
+  "version": "1.1",
   "minimumCoreVersion": "9.0",
-  "compatibleCoreVersion": "9.0",
+  "compatibleCoreVersion": "9.269",
+  "scripts": [],
   "esmodules": ["midguardrpg.js"],
   "styles": ["midguardrpg.css"],
-  "packs": [],
   "languages": [
     {
       "lang": "pl",
@@ -21,8 +23,11 @@
       "path": "lang/pl.json"
     }
   ],
-  "initiative": "",
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "socket": false,
   "manifest": "https://github.com/arturkonczalski/Midguard-RPG-Official/releases/latest/download/system.json",
-  "url": "https://github.com/arturkonczalski/Midguard-RPG-Official",
-  "download": "https://github.com/arturkonczalski/Midguard-RPG-Official/releases/latest/download/system.zip"
+  "download": "https://github.com/arturkonczalski/Midguard-RPG-Official/releases/latest/download/system.zip",
+  "protected": false
 }
